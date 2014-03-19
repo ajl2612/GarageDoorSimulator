@@ -9,9 +9,6 @@
 #ifndef __StateMachine__State__
 #define __StateMachine__State__
 
-#ifndef STATEMACHINE_H_
-#define STATEMACHINE_H_
-
 #define STATE_CLOSEDDOOR 1
 #define STATE_CLOSINGDOOR 2
 #define STATE_OPENDDOOR 3
@@ -23,7 +20,7 @@
 #define EVENT_IR 2
 #define EVENT_DOOROPEN 3
 #define EVENT_DOORCLOSED 4
-#define EVENT_MOTOROVERDRIVE 5
+#define EVENT_MOTOROVERCURRENT 5
 #define EVENT_EXIT -1
 
 #include <iostream>
@@ -39,7 +36,7 @@ public:
     std::string getName();
     int getID();
 
-    virtual void tansition( int EVENT_CODE );
+    virtual void tansition( int event_id );
     virtual void onEntry() = 0;
     virtual void onReEntry() = 0;
     virtual void onExit() = 0;

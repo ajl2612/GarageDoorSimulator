@@ -10,12 +10,12 @@
 #define __StateMachine__EventGenerator__
 
 #include <iostream>
-#include "EventQueue.h"
+#include "../StateMachineLogic/EventQueue.h"
 
 class EventGenerator{
 
 protected:
-    EventQueue* myQueue;
+    EventQueue *myQueue;
     virtual void sendCMD(char c) = 0;
 
 public:

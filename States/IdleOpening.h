@@ -1,5 +1,5 @@
 /*
- * IdleRaising.h
+ * IdleOpening.h
  *
  *  Created on: Mar 19, 2014
  *      Author: nmc2484
@@ -11,13 +11,13 @@
 #include <iostream>
 #include "State.h"
 
-class Idle : public State{
+class IdleOpening : public State{
 
 public:
     void onEntry();
     void onReEntry();
     void onExit();
-    int transition(int event_id);
+    int transition(int event_id );
 
 };
 #endif /* defined(__StateMachine__Idle__) */

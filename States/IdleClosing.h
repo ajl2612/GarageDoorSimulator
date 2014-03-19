@@ -12,7 +12,7 @@
 #include <iostream>
 #include "State.h"
 
-class Idle : public State{
+class IdleClosing : public State{
 
 public:
     void onEntry();

@@ -20,7 +20,7 @@ void Closing::onExit(){
 
 int Closing::transition(int event_id){
 
-	switch( event_id_){
+	switch( event_id ){
 
 	case EVENT_PUSHBUTTON:
 		return 5;
@@ -29,7 +29,7 @@ int Closing::transition(int event_id){
 		return 4;
 		break;
 	case EVENT_DOOROPEN:
-		std::cout << "No transition for DoorOpen event in Closing state.\n";
+		std::printf("No transition for DoorOpen event in Closing state.\n");
 		return -1;
 		break;
 	case EVENT_DOORCLOSED:
@@ -39,7 +39,7 @@ int Closing::transition(int event_id){
 		return 4;
 		break;
 	default:
-		printf( "ERROR: no event definition for event code:%d\n", event_id);
+		std::printf( "ERROR: no event definition for idle code:%d\n", event_id);
 		return -1;
 
 	}

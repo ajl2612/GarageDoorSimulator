@@ -21,7 +21,7 @@ private:
     void raiseIREvent();
     
 public:
-    Keyboard( EventQueue* queue);
+    Keyboard( EventQueue *queue);
     void* runProcess (void* arg);
 
 };

@@ -9,7 +9,7 @@
 #include "Keyboard.h"
 
 
-Keyboard::Keyboard( EventQueue* queue ){
+Keyboard::Keyboard( EventQueue *queue ){
     this->myQueue = queue;
 }
 

@@ -11,41 +11,41 @@
 
 
 
-void Idle::onEntry(){
+void IdleOpening::onEntry(){
     NOP();
 }
-void Idle::onReEntry(){
+void IdleOpening::onReEntry(){
     NOP();
 }
-void Idle::onExit(){
+void IdleOpening::onExit(){
     NOP();
 }
 
-int Closing::transition(int event_id){
+int IdleOpening::transition(int event_id){
 
-	switch( event_id_){
+	switch( event_id ){
 
 	case EVENT_PUSHBUTTON:
 		return 2;
 		break;
 	case EVENT_IR:
-		std::cout << "No transition for IR beam interrupt event in Idle state.\n";
+		std::printf("No transition for IR beam interrupt event in Idle state.\n");
 		return -1;
 		break;
 	case EVENT_DOOROPEN:
-		std::cout << "No transition for DoorOpen event in Idle state.\n";
+		std::printf( "No transition for DoorOpen event in Idle state.\n");
 		return -1;
 		break;
 	case EVENT_DOORCLOSED:
-		std::cout << "No transition for DoorClosed event in Idle state.\n";
+		std::printf( "No transition for DoorClosed event in Idle state.\n");
 		return -1;
 		break;
 	case EVENT_MOTOROVERCURRENT:
-		std::cout << "No transition for DoorClosed event in Idle state.\n";
+		std::printf("No transition for DoorClosed event in Idle state.\n");
 		return -1;
 		break;
 	default:
-		printf( "ERROR: no event definition for idle code:%d\n", event_id);
+		std::printf( "ERROR: no event definition for idle code:%d\n", event_id);
 		return -1;
 
 	}
