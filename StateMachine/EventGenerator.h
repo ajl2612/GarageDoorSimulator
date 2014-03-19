@@ -16,9 +16,9 @@ class EventGenerator{
 
 protected:
     EventQueue* myQueue;
+    virtual void sendCMD(char c) = 0;
 
 public:
-    virtual void sendCMD(char c) = 0;
-    //virtual void* runProcess (void* arg) = 0;
+        //virtual void* runProcess (void* arg) = 0;
 };
 #endif /* defined(__StateMachine__EventGenerator__) */       

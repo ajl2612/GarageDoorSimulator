@@ -14,9 +14,16 @@
 
 class Keyboard: public EventGenerator{
     
-    Keyboard( EventQueue* queue);
+private:
     void sendCMD(char c);
+    void riasePushButtonEvent();
+    void raiseSystemExitEvent();
+    void raiseIREvent();
+    
+public:
+    Keyboard( EventQueue* queue);
     void* runProcess (void* arg);
+
 };
 
 #endif /* defined(__StateMachine__Keyboard__) */

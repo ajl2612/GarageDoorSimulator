@@ -13,11 +13,20 @@
 #include "EventGenerator.h"
 
 class Motor: public EventGenerator{
+private:
+    void sendCMD(char c);
+    void raiseDoorOpenEvent();
+    void raiseDoorClosedEvent();
     
 public:
     Motor( EventQueue* queue);
-    void sendCMD(char c);
     void* runProcess (void* arg);
+    void enableMotorUp();
+    void enableMotorDown();
+    void disengageMotor();
+    
+    void raiseMotorOverdriveEvent();
+
     
     
 };
