@@ -18,11 +18,10 @@
 #define NUM_THREADS 5
 #define END_READ 'q'
 
-using namespace std;
 
 void* thread (void* arg);
 
-string command;
+std::string command;
 bool newCmds = false;
 bool alreadyRead = true;
 bool done = false;
@@ -35,11 +34,11 @@ void* threadIO (void* arg){
 
     printf("Begin scanning for user input\n");
     
-    string input = "";
+    std::string input = "";
     while( !done ){
         printf("waiting...\n");
-        getline(cin, input);
-        printf( "got something...%s\n", input.c_str());
+        getline(std::cin, input);
+        std::printf( "got something...%s\n", input.c_str());
         
         mtx.lock();
         
@@ -63,7 +62,7 @@ int main( int argc, char *argv[]){
     
     printf("Begin processing for user input\n");
     
-    string input = "";
+    std::string input = "";
     pthread_t io;
     pthread_create(&io, NULL, threadIO, NULL);
     
