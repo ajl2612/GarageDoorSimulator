@@ -11,4 +11,19 @@
 
 #include <iostream>
 
+class State{
+protected:
+    
+    int stateID;
+    std::string name;
+    
+public:
+    int NOP();
+    std::string getName();
+    int getID();
+    virtual void onEntry() = 0;
+    virtual void onReEntry() = 0;
+    virtual void onExit() = 0;
+};
+
 #endif /* defined(__StateMachine__State__) */

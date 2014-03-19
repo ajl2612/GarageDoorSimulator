@@ -7,3 +7,16 @@
 //
 
 #include "Idle.h"
+#define noop ((void)0)
+
+
+
+void Idle::onEntry(){
+    NOP();
+}
+void Idle::onReEntry(){
+    NOP();
+}
+void Idle::onExit(){
+    NOP();
+}

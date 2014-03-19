@@ -20,6 +20,10 @@
 		A15A3B4418D8CAB800AEF7D4 /* Keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15A3B4218D8CAB800AEF7D4 /* Keyboard.cpp */; };
 		A15A3B4818D8CB6900AEF7D4 /* Idle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15A3B4618D8CB6900AEF7D4 /* Idle.cpp */; };
 		A15A3B4B18D8CB7500AEF7D4 /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15A3B4918D8CB7500AEF7D4 /* State.cpp */; };
+		A15A3B4E18D9D25000AEF7D4 /* Open.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15A3B4C18D9D25000AEF7D4 /* Open.cpp */; };
+		A15A3B5118D9D25800AEF7D4 /* Closed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15A3B4F18D9D25800AEF7D4 /* Closed.cpp */; };
+		A15A3B5418D9D26100AEF7D4 /* Opening.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15A3B5218D9D26100AEF7D4 /* Opening.cpp */; };
+		A15A3B5718D9D26A00AEF7D4 /* Closing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A15A3B5518D9D26A00AEF7D4 /* Closing.cpp */; };
 		A18831A418C7012B00D48F75 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A18831A318C7012B00D48F75 /* main.cpp */; };
 		A18831A618C7012B00D48F75 /* StateMachine.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A18831A518C7012B00D48F75 /* StateMachine.1 */; };
 		A18831B118C7078D00D48F75 /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A18831B018C7078D00D48F75 /* thread.cpp */; };
@@ -66,6 +70,14 @@
 		A15A3B4718D8CB6900AEF7D4 /* Idle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Idle.h; sourceTree = "<group>"; };
 		A15A3B4918D8CB7500AEF7D4 /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
 		A15A3B4A18D8CB7500AEF7D4 /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		A15A3B4C18D9D25000AEF7D4 /* Open.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Open.cpp; sourceTree = "<group>"; };
+		A15A3B4D18D9D25000AEF7D4 /* Open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Open.h; sourceTree = "<group>"; };
+		A15A3B4F18D9D25800AEF7D4 /* Closed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Closed.cpp; sourceTree = "<group>"; };
+		A15A3B5018D9D25800AEF7D4 /* Closed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Closed.h; sourceTree = "<group>"; };
+		A15A3B5218D9D26100AEF7D4 /* Opening.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Opening.cpp; sourceTree = "<group>"; };
+		A15A3B5318D9D26100AEF7D4 /* Opening.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Opening.h; sourceTree = "<group>"; };
+		A15A3B5518D9D26A00AEF7D4 /* Closing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Closing.cpp; sourceTree = "<group>"; };
+		A15A3B5618D9D26A00AEF7D4 /* Closing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Closing.h; sourceTree = "<group>"; };
 		A18831A018C7012B00D48F75 /* StateMachine */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StateMachine; sourceTree = BUILT_PRODUCTS_DIR; };
 		A18831A318C7012B00D48F75 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A18831A518C7012B00D48F75 /* StateMachine.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = StateMachine.1; sourceTree = "<group>"; };
@@ -127,6 +139,14 @@
 				A15A3B4718D8CB6900AEF7D4 /* Idle.h */,
 				A15A3B4918D8CB7500AEF7D4 /* State.cpp */,
 				A15A3B4A18D8CB7500AEF7D4 /* State.h */,
+				A15A3B4C18D9D25000AEF7D4 /* Open.cpp */,
+				A15A3B4D18D9D25000AEF7D4 /* Open.h */,
+				A15A3B4F18D9D25800AEF7D4 /* Closed.cpp */,
+				A15A3B5018D9D25800AEF7D4 /* Closed.h */,
+				A15A3B5218D9D26100AEF7D4 /* Opening.cpp */,
+				A15A3B5318D9D26100AEF7D4 /* Opening.h */,
+				A15A3B5518D9D26A00AEF7D4 /* Closing.cpp */,
+				A15A3B5618D9D26A00AEF7D4 /* Closing.h */,
 			);
 			name = States;
 			sourceTree = "<group>";
@@ -225,7 +245,11 @@
 				A18831B118C7078D00D48F75 /* thread.cpp in Sources */,
 				A15A3B3718D8AE8A00AEF7D4 /* EventQueue.cpp in Sources */,
 				A15A3B2A18D802D100AEF7D4 /* OpenDoor.cpp in Sources */,
+				A15A3B5118D9D25800AEF7D4 /* Closed.cpp in Sources */,
+				A15A3B5418D9D26100AEF7D4 /* Opening.cpp in Sources */,
+				A15A3B5718D9D26A00AEF7D4 /* Closing.cpp in Sources */,
 				A15A3B4818D8CB6900AEF7D4 /* Idle.cpp in Sources */,
+				A15A3B4E18D9D25000AEF7D4 /* Open.cpp in Sources */,
 				A18831A418C7012B00D48F75 /* main.cpp in Sources */,
 				A15A3B4B18D8CB7500AEF7D4 /* State.cpp in Sources */,
 				A15A3B3A18D8B8D700AEF7D4 /* Motor.cpp in Sources */,
