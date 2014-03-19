@@ -11,13 +11,13 @@
 
 #include <iostream>
 #include <queue>
-#include <mutex>
+#include "mutex.h"
 
 class EventQueue{
     
 private:
     std::queue<char> cmdQueue;
-    std::mutex mtx;
+    PThreads::Mutex mtx;
     
 public:
     EventQueue();

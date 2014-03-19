@@ -13,8 +13,15 @@
 #include "State.h"
 
 class Closing : public State{
+
+private:
+    bool isBeamOn;
+    
+    void enableIRBeam();
+    void disableIRBeam();
     
 public:
+    Closing();
     void onEntry();
     void onReEntry();
     void onExit();
