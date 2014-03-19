@@ -17,3 +17,36 @@ void Closing::onReEntry(){
 void Closing::onExit(){
     NOP();
 }
+
+int Closing::transition(int event_id){
+
+	switch( event_id_){
+
+	case EVENT_PUSHBUTTON:
+		return 5;
+		break;
+	case EVENT_IR:
+		std::cout << "No transition for IR beam interrupt event in Closing state.\n";
+		return -1;
+		break;
+	case EVENT_DOOROPEN:
+		std::cout << "No transition for DoorOpen event in Closing state.\n";
+		return -1;
+		break;
+	case EVENT_DOORCLOSED:
+		std::cout << "No transition for DoorClosed event in Closing state.\n";
+		return -1;
+		break;
+	case EVENT_MOTOROVERCURRENT:
+		return 5;
+		break;
+	default:
+		printf( "ERROR: no event definition for event code:%d\n", event_id);
+		return -1;
+
+	}
+
+	return -1;
+
+
+}
