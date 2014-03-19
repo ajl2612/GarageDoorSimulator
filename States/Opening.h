@@ -18,6 +18,7 @@ public:
     void onEntry();
     void onReEntry();
     void onExit();
+    int transition(event_id);
     
 };
 #endif /* defined(__StateMachine__Opening__) */

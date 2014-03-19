@@ -19,3 +19,37 @@ void Open::onReEntry(){
 void Open::onExit(){
     NOP();
 }
+
+int Closing::transition(int event_id){
+
+	switch( event_id_){
+
+	case EVENT_PUSHBUTTON:
+		return 5;
+		break;
+	case EVENT_IR:
+		std::cout << "No transition for IR beam interrupt event in open state.\n";
+		return -1;
+		break;
+	case EVENT_DOOROPEN:
+		std::cout << "No transition for DoorOpen event in open state.\n";
+		return -1;
+		break;
+	case EVENT_DOORCLOSED:
+		std::cout << "No transition for DoorClosed event in open state.\n";
+		return -1;
+		break;
+	case EVENT_MOTOROVERCURRENT:
+		std::cout << "No transition for DoorClosed event in open state.\n";
+		return -1;
+		break;
+	default:
+		printf( "ERROR: no event definition for idle code:%d\n", event_id);
+		return -1;
+
+	}
+
+	return -1;
+
+
+}

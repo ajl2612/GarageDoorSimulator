@@ -1,22 +1,23 @@
 //
-//  Opening.cpp
+//  Idle.cpp
 //  StateMachine
 //
-//  Created by Andrew III Lyne on 3/19/14.
+//  Created by Andrew III Lyne on 3/18/14.
 //  Copyright (c) 2014 Andrew III Lyne. All rights reserved.
 //
 
-#include "Opening.h"
+#include "IdleClosing.h"
+#define noop ((void)0)
 
 
 
-void Opening::onEntry(){
+void Idle::onEntry(){
     NOP();
 }
-void Opening::onReEntry(){
+void Idle::onReEntry(){
     NOP();
 }
-void Opening::onExit(){
+void Idle::onExit(){
     NOP();
 }
 
@@ -25,21 +26,23 @@ int Closing::transition(int event_id){
 	switch( event_id_){
 
 	case EVENT_PUSHBUTTON:
-		return 6;
+		return 4;
 		break;
 	case EVENT_IR:
-		std::cout << "No transition for IR beam interrupt event in Opening state.\n";
+		std::cout << "No transition for IR beam interrupt event in Idle state.\n";
 		return -1;
 		break;
 	case EVENT_DOOROPEN:
-		return 3;
+		std::cout << "No transition for DoorOpen event in Idle state.\n";
+		return -1;
 		break;
 	case EVENT_DOORCLOSED:
-		std::cout << "No transition for DoorClosed event in Opening state.\n";
+		std::cout << "No transition for DoorClosed event in Idle state.\n";
 		return -1;
 		break;
 	case EVENT_MOTOROVERCURRENT:
-		return 5;
+		std::cout << "No transition for DoorClosed event in Idle state.\n";
+		return -1;
 		break;
 	default:
 		printf( "ERROR: no event definition for idle code:%d\n", event_id);
