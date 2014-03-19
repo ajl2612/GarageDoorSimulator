@@ -8,10 +8,6 @@
 
 #include "Closing.h"
 
-Closing::Closing(){
-    this->isBeamOn = false;
-}
-
 void Closing::onEntry(){
     NOP();
 }
@@ -20,21 +16,4 @@ void Closing::onReEntry(){
 }
 void Closing::onExit(){
     NOP();
-}
-
-
-void Closing::enableIRBeam(){
-    if( isBeamOn ){
-        std::cout <<"Error: Beam engaged while beam currently on." << std::endl;
-    }else{
-        isBeamOn = true;
-    }
-}
-
-void Closing::disableIRBeam(){
-    if( !isBeamOn ){
-        std::cout <<"Error: Beam disengaged while beam currently off." << std::endl;
-    }else{
-        isBeamOn = false;
-    }
 }

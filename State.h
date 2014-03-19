@@ -24,7 +24,6 @@ public:
     virtual void onEntry() = 0;
     virtual void onReEntry() = 0;
     virtual void onExit() = 0;
-    virtual int transition( int eventCode) = 0;
 };
 
 #endif /* defined(__StateMachine__State__) */
