@@ -11,6 +11,16 @@
 
 #include <iostream>
 #include "EventGenerator.h"
+#include <iostream>
+#include "EventGenerator.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <pthread.h>
+#include <unistd.h>
+#include <string>
+#include <iostream>
+#include "mutex.h"
+#include <queue>
 
 class Motor: public EventGenerator{
 private:
@@ -20,7 +30,7 @@ private:
     
 public:
     Motor( EventQueue* queue);
-    void* runProcess (void);
+    void* runProcess (void* args);
     void enableMotorUp();
     void enableMotorDown();
     void disengageMotor();

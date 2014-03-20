@@ -13,6 +13,7 @@
 #define DIR_LOWERING 2
 #define DIR_IDLE 0
 pthread_t io;
+
 int timer = 0;
 int q = 1;
 int r = 2;
@@ -20,8 +21,8 @@ int r = 2;
 int* up = &q;
 int* down = &r;
 
-char upDoor = 3;
-char downDoor = 1;
+char upDoor = '3';
+char downDoor = '1';
 
 int direction =0;
 
@@ -29,7 +30,7 @@ bool finished = false;
 
 
 void* motorThreadHelper(void* args){
-	return static_cast<Motor*>(args)->runProcess();
+	return static_cast<Motor*>(args)->runProcess(NULL);
 }
 
 Motor::Motor( EventQueue *queue ){
@@ -51,24 +52,31 @@ void Motor::sendCMD(char c){
     this->myQueue->enterCMD(c);
 }
 
-void* Motor::runProcess(void){
+void* Motor::runProcess(void* args){
 	while (!finished){
 		if (direction == DIR_RAISING){
 			if(timer == 10){
+				printf("DOOR is open...\n ");
 				raiseDoorOpenEvent();
+				direction = DIR_IDLE;
 			}else {
+				printf("DOOR opening is at...%d \n", timer);
 				timer +=1;
-				sleep(1);
+				sleep(2);
 			}
 		}else if (direction == DIR_LOWERING){
 			if (timer == 0){
+				printf("DOOR is closed...\n ");
 				raiseDoorClosedEvent();
+				direction = DIR_IDLE;
 			}else{
+				printf("DOOR closing is at... %d \n", timer);
 				timer -= 1;
-				sleep(1);
+				sleep(2);
 			}
 		}else {
-			sleep (1);
+			printf("not doing anything..\n");
+			sleep (2);
 		}
 	}
 	return NULL;
