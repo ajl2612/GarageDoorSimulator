@@ -7,8 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A1B9A33018DAC1CD00B169FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A32F18DAC1CD00B169FD /* main.cpp */; };
 		A1B9A33218DAC1CD00B169FD /* GarageDoorSimulator.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = A1B9A33118DAC1CD00B169FD /* GarageDoorSimulator.1 */; };
+		A1B9A3BB18DAC20B00B169FD /* Closed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A33818DAC20B00B169FD /* Closed.cpp */; };
+		A1B9A3BC18DAC20B00B169FD /* ClosedDoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A33A18DAC20B00B169FD /* ClosedDoor.cpp */; };
+		A1B9A3BD18DAC20B00B169FD /* Closing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A33C18DAC20B00B169FD /* Closing.cpp */; };
+		A1B9A3D618DAC20B00B169FD /* Event.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A35D18DAC20B00B169FD /* Event.cpp */; };
+		A1B9A3D718DAC20B00B169FD /* EventGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A35F18DAC20B00B169FD /* EventGenerator.cpp */; };
+		A1B9A3D818DAC20B00B169FD /* EventQueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A36118DAC20B00B169FD /* EventQueue.cpp */; };
+		A1B9A3D918DAC20B00B169FD /* Exit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A36318DAC20B00B169FD /* Exit.cpp */; };
+		A1B9A3DA18DAC20B00B169FD /* IdleClosing.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A36518DAC20B00B169FD /* IdleClosing.cpp */; };
+		A1B9A3DB18DAC20B00B169FD /* IdleOpening.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A36718DAC20B00B169FD /* IdleOpening.cpp */; };
+		A1B9A3DC18DAC20B00B169FD /* IR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A36918DAC20B00B169FD /* IR.cpp */; };
+		A1B9A3DD18DAC20B00B169FD /* Keyboard.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A36B18DAC20B00B169FD /* Keyboard.cpp */; };
+		A1B9A3E018DAC20B00B169FD /* MotorOverdrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37018DAC20B00B169FD /* MotorOverdrive.cpp */; };
+		A1B9A3E118DAC20B00B169FD /* mutex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37218DAC20B00B169FD /* mutex.cpp */; };
+		A1B9A3E218DAC20B00B169FD /* Open.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37418DAC20B00B169FD /* Open.cpp */; };
+		A1B9A3E318DAC20B00B169FD /* OpenDoor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37618DAC20B00B169FD /* OpenDoor.cpp */; };
+		A1B9A3E418DAC20B00B169FD /* Opening.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37818DAC20B00B169FD /* Opening.cpp */; };
+		A1B9A3E518DAC20B00B169FD /* PushButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37A18DAC20B00B169FD /* PushButton.cpp */; };
+		A1B9A3E618DAC20B00B169FD /* State.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37C18DAC20B00B169FD /* State.cpp */; };
+		A1B9A3E718DAC20B00B169FD /* StateMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A37F18DAC20B00B169FD /* StateMachine.cpp */; };
+		A1B9A3E818DAC20B00B169FD /* thread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A38118DAC20B00B169FD /* thread.cpp */; };
+		A1B9A41D18DAC30100B169FD /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A41C18DAC30100B169FD /* main.cpp */; };
+		A1B9A42418DAD68700B169FD /* Motor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1B9A42218DAD68700B169FD /* Motor.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,8 +47,52 @@
 
 /* Begin PBXFileReference section */
 		A1B9A32C18DAC1CC00B169FD /* GarageDoorSimulator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = GarageDoorSimulator; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1B9A32F18DAC1CD00B169FD /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		A1B9A33118DAC1CD00B169FD /* GarageDoorSimulator.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = GarageDoorSimulator.1; sourceTree = "<group>"; };
+		A1B9A33818DAC20B00B169FD /* Closed.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Closed.cpp; sourceTree = "<group>"; };
+		A1B9A33918DAC20B00B169FD /* Closed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Closed.h; sourceTree = "<group>"; };
+		A1B9A33A18DAC20B00B169FD /* ClosedDoor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ClosedDoor.cpp; sourceTree = "<group>"; };
+		A1B9A33B18DAC20B00B169FD /* ClosedDoor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClosedDoor.h; sourceTree = "<group>"; };
+		A1B9A33C18DAC20B00B169FD /* Closing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Closing.cpp; sourceTree = "<group>"; };
+		A1B9A33D18DAC20B00B169FD /* Closing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Closing.h; sourceTree = "<group>"; };
+		A1B9A33E18DAC20B00B169FD /* common.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = common.mk; sourceTree = "<group>"; };
+		A1B9A35D18DAC20B00B169FD /* Event.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Event.cpp; sourceTree = "<group>"; };
+		A1B9A35E18DAC20B00B169FD /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		A1B9A35F18DAC20B00B169FD /* EventGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventGenerator.cpp; sourceTree = "<group>"; };
+		A1B9A36018DAC20B00B169FD /* EventGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventGenerator.h; sourceTree = "<group>"; };
+		A1B9A36118DAC20B00B169FD /* EventQueue.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EventQueue.cpp; sourceTree = "<group>"; };
+		A1B9A36218DAC20B00B169FD /* EventQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventQueue.h; sourceTree = "<group>"; };
+		A1B9A36318DAC20B00B169FD /* Exit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Exit.cpp; sourceTree = "<group>"; };
+		A1B9A36418DAC20B00B169FD /* Exit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exit.h; sourceTree = "<group>"; };
+		A1B9A36518DAC20B00B169FD /* IdleClosing.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdleClosing.cpp; sourceTree = "<group>"; };
+		A1B9A36618DAC20B00B169FD /* IdleClosing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdleClosing.h; sourceTree = "<group>"; };
+		A1B9A36718DAC20B00B169FD /* IdleOpening.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IdleOpening.cpp; sourceTree = "<group>"; };
+		A1B9A36818DAC20B00B169FD /* IdleOpening.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IdleOpening.h; sourceTree = "<group>"; };
+		A1B9A36918DAC20B00B169FD /* IR.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = IR.cpp; sourceTree = "<group>"; };
+		A1B9A36A18DAC20B00B169FD /* IR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IR.h; sourceTree = "<group>"; };
+		A1B9A36B18DAC20B00B169FD /* Keyboard.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Keyboard.cpp; sourceTree = "<group>"; };
+		A1B9A36C18DAC20B00B169FD /* Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keyboard.h; sourceTree = "<group>"; };
+		A1B9A37018DAC20B00B169FD /* MotorOverdrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MotorOverdrive.cpp; sourceTree = "<group>"; };
+		A1B9A37118DAC20B00B169FD /* MotorOverdrive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MotorOverdrive.h; sourceTree = "<group>"; };
+		A1B9A37218DAC20B00B169FD /* mutex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = mutex.cpp; sourceTree = "<group>"; };
+		A1B9A37318DAC20B00B169FD /* mutex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mutex.h; sourceTree = "<group>"; };
+		A1B9A37418DAC20B00B169FD /* Open.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Open.cpp; sourceTree = "<group>"; };
+		A1B9A37518DAC20B00B169FD /* Open.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Open.h; sourceTree = "<group>"; };
+		A1B9A37618DAC20B00B169FD /* OpenDoor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = OpenDoor.cpp; sourceTree = "<group>"; };
+		A1B9A37718DAC20B00B169FD /* OpenDoor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenDoor.h; sourceTree = "<group>"; };
+		A1B9A37818DAC20B00B169FD /* Opening.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Opening.cpp; sourceTree = "<group>"; };
+		A1B9A37918DAC20B00B169FD /* Opening.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Opening.h; sourceTree = "<group>"; };
+		A1B9A37A18DAC20B00B169FD /* PushButton.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PushButton.cpp; sourceTree = "<group>"; };
+		A1B9A37B18DAC20B00B169FD /* PushButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushButton.h; sourceTree = "<group>"; };
+		A1B9A37C18DAC20B00B169FD /* State.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = State.cpp; sourceTree = "<group>"; };
+		A1B9A37D18DAC20B00B169FD /* State.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = State.h; sourceTree = "<group>"; };
+		A1B9A37E18DAC20B00B169FD /* StateMachine.1 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.man; path = StateMachine.1; sourceTree = "<group>"; };
+		A1B9A37F18DAC20B00B169FD /* StateMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StateMachine.cpp; sourceTree = "<group>"; };
+		A1B9A38018DAC20B00B169FD /* StateMachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateMachine.h; sourceTree = "<group>"; };
+		A1B9A38118DAC20B00B169FD /* thread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = thread.cpp; sourceTree = "<group>"; };
+		A1B9A38218DAC20B00B169FD /* thread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
+		A1B9A41C18DAC30100B169FD /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A1B9A42218DAD68700B169FD /* Motor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Motor.cpp; sourceTree = "<group>"; };
+		A1B9A42318DAD68700B169FD /* Motor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Motor.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,10 +125,78 @@
 		A1B9A32E18DAC1CC00B169FD /* GarageDoorSimulator */ = {
 			isa = PBXGroup;
 			children = (
-				A1B9A32F18DAC1CD00B169FD /* main.cpp */,
+				A1B9A42118DAC39D00B169FD /* EventGenerators */,
+				A1B9A41E18DAC33500B169FD /* Events */,
+				A1B9A41F18DAC33B00B169FD /* States */,
+				A1B9A33E18DAC20B00B169FD /* common.mk */,
+				A1B9A41C18DAC30100B169FD /* main.cpp */,
+				A1B9A36118DAC20B00B169FD /* EventQueue.cpp */,
+				A1B9A36218DAC20B00B169FD /* EventQueue.h */,
+				A1B9A37218DAC20B00B169FD /* mutex.cpp */,
+				A1B9A37318DAC20B00B169FD /* mutex.h */,
+				A1B9A37E18DAC20B00B169FD /* StateMachine.1 */,
+				A1B9A37F18DAC20B00B169FD /* StateMachine.cpp */,
+				A1B9A38018DAC20B00B169FD /* StateMachine.h */,
+				A1B9A38118DAC20B00B169FD /* thread.cpp */,
+				A1B9A38218DAC20B00B169FD /* thread.h */,
 				A1B9A33118DAC1CD00B169FD /* GarageDoorSimulator.1 */,
 			);
 			path = GarageDoorSimulator;
+			sourceTree = "<group>";
+		};
+		A1B9A41E18DAC33500B169FD /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				A1B9A37618DAC20B00B169FD /* OpenDoor.cpp */,
+				A1B9A37718DAC20B00B169FD /* OpenDoor.h */,
+				A1B9A37A18DAC20B00B169FD /* PushButton.cpp */,
+				A1B9A37B18DAC20B00B169FD /* PushButton.h */,
+				A1B9A35D18DAC20B00B169FD /* Event.cpp */,
+				A1B9A35E18DAC20B00B169FD /* Event.h */,
+				A1B9A36318DAC20B00B169FD /* Exit.cpp */,
+				A1B9A36418DAC20B00B169FD /* Exit.h */,
+				A1B9A36918DAC20B00B169FD /* IR.cpp */,
+				A1B9A36A18DAC20B00B169FD /* IR.h */,
+				A1B9A37018DAC20B00B169FD /* MotorOverdrive.cpp */,
+				A1B9A37118DAC20B00B169FD /* MotorOverdrive.h */,
+				A1B9A33A18DAC20B00B169FD /* ClosedDoor.cpp */,
+				A1B9A33B18DAC20B00B169FD /* ClosedDoor.h */,
+			);
+			name = Events;
+			sourceTree = "<group>";
+		};
+		A1B9A41F18DAC33B00B169FD /* States */ = {
+			isa = PBXGroup;
+			children = (
+				A1B9A37C18DAC20B00B169FD /* State.cpp */,
+				A1B9A37D18DAC20B00B169FD /* State.h */,
+				A1B9A37818DAC20B00B169FD /* Opening.cpp */,
+				A1B9A37918DAC20B00B169FD /* Opening.h */,
+				A1B9A36518DAC20B00B169FD /* IdleClosing.cpp */,
+				A1B9A36618DAC20B00B169FD /* IdleClosing.h */,
+				A1B9A36718DAC20B00B169FD /* IdleOpening.cpp */,
+				A1B9A36818DAC20B00B169FD /* IdleOpening.h */,
+				A1B9A37418DAC20B00B169FD /* Open.cpp */,
+				A1B9A37518DAC20B00B169FD /* Open.h */,
+				A1B9A33C18DAC20B00B169FD /* Closing.cpp */,
+				A1B9A33D18DAC20B00B169FD /* Closing.h */,
+				A1B9A33818DAC20B00B169FD /* Closed.cpp */,
+				A1B9A33918DAC20B00B169FD /* Closed.h */,
+			);
+			name = States;
+			sourceTree = "<group>";
+		};
+		A1B9A42118DAC39D00B169FD /* EventGenerators */ = {
+			isa = PBXGroup;
+			children = (
+				A1B9A42218DAD68700B169FD /* Motor.cpp */,
+				A1B9A42318DAD68700B169FD /* Motor.h */,
+				A1B9A35F18DAC20B00B169FD /* EventGenerator.cpp */,
+				A1B9A36018DAC20B00B169FD /* EventGenerator.h */,
+				A1B9A36B18DAC20B00B169FD /* Keyboard.cpp */,
+				A1B9A36C18DAC20B00B169FD /* Keyboard.h */,
+			);
+			name = EventGenerators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +250,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1B9A33018DAC1CD00B169FD /* main.cpp in Sources */,
+				A1B9A3DC18DAC20B00B169FD /* IR.cpp in Sources */,
+				A1B9A3D818DAC20B00B169FD /* EventQueue.cpp in Sources */,
+				A1B9A3E718DAC20B00B169FD /* StateMachine.cpp in Sources */,
+				A1B9A3D618DAC20B00B169FD /* Event.cpp in Sources */,
+				A1B9A41D18DAC30100B169FD /* main.cpp in Sources */,
+				A1B9A3BB18DAC20B00B169FD /* Closed.cpp in Sources */,
+				A1B9A3E318DAC20B00B169FD /* OpenDoor.cpp in Sources */,
+				A1B9A42418DAD68700B169FD /* Motor.cpp in Sources */,
+				A1B9A3DD18DAC20B00B169FD /* Keyboard.cpp in Sources */,
+				A1B9A3D718DAC20B00B169FD /* EventGenerator.cpp in Sources */,
+				A1B9A3E618DAC20B00B169FD /* State.cpp in Sources */,
+				A1B9A3E518DAC20B00B169FD /* PushButton.cpp in Sources */,
+				A1B9A3E818DAC20B00B169FD /* thread.cpp in Sources */,
+				A1B9A3BD18DAC20B00B169FD /* Closing.cpp in Sources */,
+				A1B9A3E018DAC20B00B169FD /* MotorOverdrive.cpp in Sources */,
+				A1B9A3DA18DAC20B00B169FD /* IdleClosing.cpp in Sources */,
+				A1B9A3E418DAC20B00B169FD /* Opening.cpp in Sources */,
+				A1B9A3E218DAC20B00B169FD /* Open.cpp in Sources */,
+				A1B9A3E118DAC20B00B169FD /* mutex.cpp in Sources */,
+				A1B9A3DB18DAC20B00B169FD /* IdleOpening.cpp in Sources */,
+				A1B9A3D918DAC20B00B169FD /* Exit.cpp in Sources */,
+				A1B9A3BC18DAC20B00B169FD /* ClosedDoor.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
