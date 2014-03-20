@@ -12,8 +12,10 @@
 #include <unistd.h>
 #include <string>
 #include <iostream>
-#include "Utils/mutex.h"
+#include "mutex.h"
 #include <queue>
+#include "Keyboard.h"
+#include "EventQueue.h"
 #define CYCLES 3
 #define NUM_THREADS 5
 #define END_READ 'q'
@@ -25,13 +27,13 @@ std::string command;
 bool newCmds = false;
 bool alreadyRead = true;
 bool done = false;
-std::queue<char> cmdQueue;
+
 
 PThreads::Mutex mtx;
 
 
 void* threadIO (void* arg){
-
+/*
     printf("Begin scanning for user input\n");
     
     std::string input = "";
@@ -54,75 +56,15 @@ void* threadIO (void* arg){
     }
     
     printf("Terminating scanning for user input\n");
-    
+    */
     return NULL;
 }
 
 int main( int argc, char *argv[]){
-    
-    printf("Begin processing for user input\n");
-    
-    std::string input = "";
-    pthread_t io;
-    pthread_create(&io, NULL, threadIO, NULL);
-    
-    while(!done){
-        printf("In loop....\n");
-        sleep(2);
-        if(newCmds){
-            mtx.lock();
-            printf( "NEW COMMANDS !!!!\n");
-
-            while( !cmdQueue.empty()){
-                printf( "entered....%c\n", cmdQueue.front());
-                cmdQueue.pop();
-            }
-            newCmds = false;
-            mtx.unlock();
-        }
-        
-        
-        
-    }
-    pthread_join(io,NULL);
-    
-    printf("Terminating processing for user input\n");
-
-    return EXIT_SUCCESS;
-}
-
-
-
-/*
-int main(int argc, char *argv[]) {
    
-    printf("Welcome to the QNX Momentics IDE\n");
-    int myInts [NUM_THREADS] = {1,2,3,4,5};
-    int i;
-    pthread_t threads [NUM_THREADS];
-    for( i = 0; i < NUM_THREADS; i++){
-        pthread_create(&threads[i], NULL, thread, &myInts[i] );
-    }
-    
-    for( i = 0; i < NUM_THREADS; i++){
-        pthread_join(threads[i],NULL);
-    }
-    
-    printf("Goodbye!\n");
-    return EXIT_SUCCESS;
-    
+	EventQueue myQueue = EventQueue();
+	Keyboard keys = Keyboard(&myQueue);
+
+	return 1;
+
 }
-*/
-/*
-void* thread (void* arg){
-    unsigned int threadNum = *(unsigned int*)arg;
-    int i;
-    for(i = 0; i < CYCLES; i++) {
-        
-        sleep(threadNum);
-        
-        printf("Thread %d cycled \n", threadNum);
-    }
-    
-    return NULL;
-}*/
